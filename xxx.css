@@ -1,0 +1,231 @@
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ------------------------------------------ESTILOS DO HEADER */
+.header {
+    
+    background-color: #f89b10 ;
+    height: 6rem;    
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+    
+}
+
+
+.header h1 {
+    color: black
+}
+
+
+
+.logo {
+    grid-area: logo;
+    display: inline;
+
+}
+.logo img {
+    max-width: 4%;
+    
+
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a:hover {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* --------------------------------------FINAL ESTILO DO HEADER */
+
+
+/* ---------------------------------------ESTILOS DO HERO */
+
+.hero {
+    width: 60%; 
+    margin: 20px auto;
+    border-radius: 13px;
+    background-color: #000;
+    background-image: linear-gradient(rgb(248, 155, 16), rgb(240, 155, 76) );
+    color: #fff;
+    padding: 5rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "title" "subtitle";
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    grid-area: title;
+    color: #fff;
+}
+
+.hero p {
+    font-style: 2rem;
+    grid-area: subtitle;
+}
+
+#genero4 {
+    text-align: center;
+}
+/* ------------------------------------------FINAL HERO */
+
+/* ------------------------------------------INFO */
+
+#projeto1 {
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .2)),
+    url(images/pexels-pixabay-355948.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 7px;
+}
+
+#projeto1 h5{
+    font-size: 45px;
+    margin: 50px 30px;
+    color: #fff;
+    
+}
+
+#projeto1 p{
+    margin: 30px 30px 60px;
+    width: 40%;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#projeto1 a{
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid rgb(211, 166, 82) ;
+    background-color: rgb(211, 166, 82) ;
+    background-image: linear-gradient(rgb(211, 166, 82), #f89b10 );
+    padding: 8px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+#projeto1 a:hover{
+    /* color: #dc143c; */
+    /* border: 2px solid rgb(228, 120, 192) ; */
+    /* background-color: rgb(228, 120, 192); */
+    background-color: transparent;
+    background-image: none;
+}
+
+
+/* ------------------------------------------FINAL INFO */
+
+/* --------------------------------------------CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #fca02879;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.card p {
+    font-size: 1.8rem;
+    color: #666;;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+.card5 {
+    grid-area: card5;
+}
+.card6 {
+    grid-area: card6;
+}
+/* ---------------------------------------FINAL CARDS */
+/* ---------------------------------------FOOTER */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copyright";
+
+
+}
+
+.footer-content {
+    grid-area: copyright;
+}
+/* FINAL FOOTER */
